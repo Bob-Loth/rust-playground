@@ -44,7 +44,7 @@ fn print_some(x: i32) {
     match x {
         0 | 2 => println!("x is zero or two"),
         10 => println!("x is ten"),
-        y if y < 20 => println!("x is less than 20: {}",y) ,
+        y if y < 20 => println!("x is less than 20: {}", y),
         y => println!("x is something else {}", y),
     }
 }

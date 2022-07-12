@@ -1,4 +1,4 @@
-fn foo() -> Box<i32>{
+fn foo() -> Box<i32> {
     let x = Box::new(55);
     x //move semantics
 }
@@ -8,7 +8,7 @@ fn main() {
     //const auto x = std::make_unique<const int>(75);
     let z = foo();
     //x = y not allowed, neither is *x = *y.
-    
-    println!("'x' points to {}",*x);
-    println!("'z' points to {}",*z);
+
+    println!("'x' points to {}", *x);
+    println!("'z' points to {}", *z);
 }
